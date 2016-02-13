@@ -5,6 +5,8 @@ and matplotlib for evaluation plots.
 
 Homepage: https://github.com/digitalarbeiter/web-survey-tool
 
+Developed under Debian GNU/Linux.
+
 
 ## Dependencies
 

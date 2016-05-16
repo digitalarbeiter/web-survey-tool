@@ -350,7 +350,23 @@ und vom Team: Petra Welte </p>
         "comment": u"Gründe, Ergänzungen, Anmerkungen:",
         "answer": None,
     })
+  survey["questions"].append({
+        "type": "text-only",
+        "title": u"Aktueller Teil",
+        "toc": u"Zum aktuellen Teil",
+        "question": u"""
+<p>Im Aktuellen Teil der Umfrage geht es dieses Jahr um das "Elterncafe"</p></br>
 
+<p>In der Adventszeit 2015 hat uns das Kiga-Team mit dem "Adventsstübchen" eine tolle Möglichkeit
+gegeben, uns zum Austausch und Zusammensein zu treffen. Dies fand so grossen Anklang das die
+Frage war: Wie können wir das fortsetzen/weiterführen? So entstand die Idee mit dem Elterncafe.
+Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für das Elterncafe nutzen. Deshalb haben wir Alternativen gesucht.</p>
+
+            """,
+        "subquestions": [],
+        "comment": None,
+        "answer": None,
+    })
     survey["questions"].append({
         "type": "free-comment",
         "title": u"Anmerkungen (positiv)",

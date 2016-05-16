@@ -380,7 +380,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Was waren für euch Gründen teilzunehmen?",
         "answer": None,
     })
-	        survey["questions"].append({
+	    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Nichtteilnahme",
@@ -395,6 +395,51 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Sonstiges",
         "answer": None,
     })
+		survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Ort des Steh Elterncafes",
+        "question": u"Wie findet ihr den überdachten Bereich vor der Eingangstür als Ort für das Steh- Elterncafe",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Gut",
+            u"Nicht so gut",
+        ],
+        "comment": u"Sonstiges",
+        "answer": None,
+    }) 
+	survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Nikolauszimmer als Elterncafe",
+        "question": u"Wie gefällt euch das Nikolauszimmer als Ort für das Elterncafe?",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Gut",
+            u"Nicht so gut",
+        ],
+        "comment": u"Sonstiges",
+        "answer": None,
+    }) 
+		survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Wochentag für das Elterncafe",
+        "question": u"Welcher Tag ist für euch am besten?",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Montag",
+            u"Dienstag",
+			u"Mittwoch",
+			u"Donnerstag",
+			u"Freitag",
+        ],
+        "comment": u"Sonstiges",
+        "answer": None,
+    }) 
     survey["questions"].append({
         "type": "free-comment",
         "title": u"Anmerkungen (positiv)",

@@ -371,13 +371,13 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Teilname",
-        "question": u"Habt ihr schon mal am Elterncafe teilgenommen.",
+        "question": u"Habt ihr schon mal am Elterncafe teilgenommen?",
         "answer_type": "radio",
         "choices": JA_NEIN,
         "subquestions": [
-            u"Habt ihr schon mal am Elterncafe teilgenommen.?"
+            u"Habt ihr schon mal am Elterncafe teilgenommen?"
         ],
-        "comment": u"Was waren für euch Gründen teilzunehmen?",
+        "comment": u"Was waren für euch Gründe teilzunehmen?",
         "answer": None,
     })
 	survey["questions"].append({
@@ -385,7 +385,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "title": u"Elterncafe",
         "toc": u"Nichtteilnahme",
         "question": u"Was waren die Gründe,wenn Ihr nicht teilgenommen habt",
-        "answer_type": "radio",
+        "answer_type": "checkbox",
         "choices": JA_NEIN,
         "subquestions": [
             u"Kein Interesse",
@@ -399,26 +399,25 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Ort des Steh Elterncafes",
-        "question": u"Wie findet ihr den überdachten Bereich vor der Eingangstür als Ort für das Steh- Elterncafe",
+        "question": u"Wie findet ihr den überdachten Bereich vor der Eingangstür als Ort für das Steh-Elterncafe",
         "answer_type": "radio",
-        "choices": JA_NEIN,
+        "choices": GUT_SCHLECHT,
         "subquestions": [
-            u"Gut",
-            u"Nicht so gut",
+            u"Wie findet ihr den überdachten Bereich vor der Eingangstür als Ort für das Steh-Elterncafe",
         ],
         "comment": u"Anmerkungen",
         "answer": None,
     }) 
+		
 	survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Nikolauszimmer als Elterncafe",
         "question": u"Wie gefällt euch das Nikolauszimmer als Ort für das Elterncafe?",
         "answer_type": "radio",
-        "choices": JA_NEIN,
+        "choices": GUT_SCHLECHT,
         "subquestions": [
-            u"Gut",
-            u"Nicht so gut",
+            u"Wie gefällt euch das Nikolauszimmer als Ort für das Elterncafe?"
         ],
         "comment": u"Anmerkungen",
         "answer": None,
@@ -429,7 +428,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "toc": u"Wochentag für das Elterncafe",
         "question": u"Welcher Tag ist für euch am besten?",
         "answer_type": "checkbox",
-        "choices": JA_NEIN,
+        "choices": JA,
         "subquestions": [
             u"Montag",
             u"Dienstag",
@@ -444,9 +443,9 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Uhrzeit für das Elterncafe",
-        "question": u"Das Elterncafe ist von 8:30 Uhr und 9:30 Uhr. Wie findet ihr die Uhrzeit",
-        "answer_type": "radio",
-        "choices": JA_NEIN,
+        "question": u"Das Elterncafe ist von 8:30 Uhr und 9:30 Uhr. Wie findet ihr die Uhrzeit?",
+        "answer_type": "Checkbox",
+        "choices": JA,
         "subquestions": [
             u"Gut, so wie es ist",
             u"Früher wäre gut",
@@ -461,7 +460,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "toc": u"Referenten für das Elterncafe",
         "question": u"•	Würdet Ihr es gut finden, wenn ab und zu ein Referent ins Elterncafe kommt, um über ein bestimmtes Thema zu sprechen?",
         "answer_type": "radio",
-        "choices": JA_NEIN,
+        "choices": JA,
         "subquestions": [
             u"Ja, das wäre interessant",
             u"Ja zum Referent, aber lieber an einem Elternabend",
@@ -484,7 +483,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "toc": u"Mittags Stammtisch",
         "question": u"Hättet Ihr auch Interesse an einem Mittagsessenstammtisch (gemeinsames Mittagessen mit Kindern) z.B.: im Häusle?",
         "answer_type": "radio",
-        "choices": JA_NEIN,
+        "choices": JA,
         "subquestions": [
             u"Ja das das könnte ich mir gut vorstellen",
             u"Nein, da habe ich kein Interesse"

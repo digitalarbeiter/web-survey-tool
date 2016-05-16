@@ -367,7 +367,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": None,
         "answer": None,
     })
-	    survey["questions"].append({
+	survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Teilname",
@@ -380,7 +380,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Was waren für euch Gründen teilzunehmen?",
         "answer": None,
     })
-	    survey["questions"].append({
+	survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Nichtteilnahme",
@@ -395,7 +395,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Sonstiges",
         "answer": None,
     })
-		survey["questions"].append({
+	survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Ort des Steh Elterncafes",
@@ -406,7 +406,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
             u"Gut",
             u"Nicht so gut",
         ],
-        "comment": u"Sonstiges",
+        "comment": u"Anmerkungen",
         "answer": None,
     }) 
 	survey["questions"].append({
@@ -420,15 +420,15 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
             u"Gut",
             u"Nicht so gut",
         ],
-        "comment": u"Sonstiges",
+        "comment": u"Anmerkungen",
         "answer": None,
     }) 
-		survey["questions"].append({
+	survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Wochentag für das Elterncafe",
         "question": u"Welcher Tag ist für euch am besten?",
-        "answer_type": "radio",
+        "answer_type": "checkbox",
         "choices": JA_NEIN,
         "subquestions": [
             u"Montag",
@@ -437,7 +437,59 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
 			u"Donnerstag",
 			u"Freitag",
         ],
-        "comment": u"Sonstiges",
+        "comment": u"Anmerkungen",
+        "answer": None,
+    }) 
+	survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Uhrzeit für das Elterncafe",
+        "question": u"Das Elterncafe ist von 8:30 Uhr und 9:30 Uhr. Wie findet ihr die Uhrzeit",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Gut, so wie es ist",
+            u"Früher wäre gut",
+			u"Später wäre gut "
+        ],
+        "comment": u"Anmerkungen",
+        "answer": None,
+    }) 
+	survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Referenten für das Elterncafe",
+        "question": u"•	Würdet Ihr es gut finden, wenn ab und zu ein Referent ins Elterncafe kommt, um über ein bestimmtes Thema zu sprechen?",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Ja, das wäre interessant",
+            u"Ja zum Referent, aber lieber an einem Elternabend",
+			u"Nein, daran habe ich kein Interesse"
+        ],
+        "comment": u"Welche Themen, für die wir uns einen Referenten einladen könnten, würden Euch interessieren?",
+        "answer": None,
+    }) 
+	survey["questions"].append({
+        "type": "free-comment",
+        "title": u"Elterncafe Anmerkungen",
+        "toc": u"Elterncafe Anmerkungen",
+        "question": u"Was könnten wir bei dem Elterncafe noch besser machen? Ideen/Vorschläge/Anregungen",
+        "comment": "",
+        "answer": None,
+    })
+	survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Mittags Stammtisch",
+        "toc": u"Mittags Stammtisch",
+        "question": u"Hättet Ihr auch Interesse an einem Mittagsessenstammtisch (gemeinsames Mittagessen mit Kindern) z.B.: im Häusle?",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Ja das das könnte ich mir gut vorstellen",
+            u"Nein, da habe ich kein Interesse"
+        ],
+        "comment": u"Anmerkungen",
         "answer": None,
     }) 
     survey["questions"].append({

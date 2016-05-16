@@ -367,6 +367,34 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": None,
         "answer": None,
     })
+	    survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Teilname",
+        "question": u"Habt ihr schon mal am Elterncafe teilgenommen.",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Habt ihr schon mal am Elterncafe teilgenommen.?"
+        ],
+        "comment": u"Was waren für euch Gründen teilzunehmen?",
+        "answer": None,
+    })
+	        survey["questions"].append({
+        "type": "yes-no",
+        "title": u"Elterncafe",
+        "toc": u"Nichtteilnahme",
+        "question": u"Was waren die Gründe,wenn Ihr nicht teilgenommen habt",
+        "answer_type": "radio",
+        "choices": JA_NEIN,
+        "subquestions": [
+            u"Kein Interesse",
+            u"Keine Zeit",
+            u"Tag und Uhrzeit ungünstig?"
+        ],
+        "comment": u"Sonstiges",
+        "answer": None,
+    })
     survey["questions"].append({
         "type": "free-comment",
         "title": u"Anmerkungen (positiv)",

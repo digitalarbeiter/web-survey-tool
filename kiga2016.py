@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 #
-# Umfrage Kiga 2015
+# Umfrage Kiga 2016
 #
 
 JA = [
@@ -25,11 +25,11 @@ GUT_SCHLECHT = [
 
 def survey_factory():
     survey = {}
-    survey["title"] = u"Elternbefragung 2015"
+    survey["title"] = u"Elternbefragung 2016"
     survey["questions"] = []
     survey["questions"].append({
         "type": "text-only",
-        "title": u"Elternbefragung 2015",
+        "title": u"Elternbefragung 2016",
         "toc": u"Zur Umfrage",
         "question": u"""
 <p>
@@ -350,7 +350,7 @@ und vom Team: Petra Welte </p>
         "comment": u"Gründe, Ergänzungen, Anmerkungen:",
         "answer": None,
     })
-  survey["questions"].append({
+    survey["questions"].append({
         "type": "text-only",
         "title": u"Aktueller Teil",
         "toc": u"Zum aktuellen Teil",
@@ -367,7 +367,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": None,
         "answer": None,
     })
-	survey["questions"].append({
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Teilname",
@@ -380,7 +380,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Was waren für euch Gründe teilzunehmen?",
         "answer": None,
     })
-	survey["questions"].append({
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Nichtteilnahme",
@@ -395,7 +395,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": u"Sonstiges",
         "answer": None,
     })
-	survey["questions"].append({
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Ort des Steh Elterncafes",
@@ -407,9 +407,8 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         ],
         "comment": u"Anmerkungen",
         "answer": None,
-    }) 
-		
-	survey["questions"].append({
+    })
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Nikolauszimmer als Elterncafe",
@@ -421,8 +420,8 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         ],
         "comment": u"Anmerkungen",
         "answer": None,
-    }) 
-	survey["questions"].append({
+    })
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Wochentag für das Elterncafe",
@@ -432,14 +431,14 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "subquestions": [
             u"Montag",
             u"Dienstag",
-			u"Mittwoch",
-			u"Donnerstag",
-			u"Freitag",
+            u"Mittwoch",
+            u"Donnerstag",
+            u"Freitag",
         ],
         "comment": u"Anmerkungen",
         "answer": None,
-    }) 
-	survey["questions"].append({
+    })
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Uhrzeit für das Elterncafe",
@@ -449,12 +448,12 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "subquestions": [
             u"Gut, so wie es ist",
             u"Früher wäre gut",
-			u"Später wäre gut "
+            u"Später wäre gut "
         ],
         "comment": u"Anmerkungen",
         "answer": None,
-    }) 
-	survey["questions"].append({
+    })
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Elterncafe",
         "toc": u"Referenten für das Elterncafe",
@@ -464,12 +463,12 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "subquestions": [
             u"Ja, das wäre interessant",
             u"Ja zum Referent, aber lieber an einem Elternabend",
-			u"Nein, daran habe ich kein Interesse"
+            u"Nein, daran habe ich kein Interesse"
         ],
         "comment": u"Welche Themen, für die wir uns einen Referenten einladen könnten, würden Euch interessieren?",
         "answer": None,
-    }) 
-	survey["questions"].append({
+    })
+    survey["questions"].append({
         "type": "free-comment",
         "title": u"Elterncafe Anmerkungen",
         "toc": u"Elterncafe Anmerkungen",
@@ -477,7 +476,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "comment": "",
         "answer": None,
     })
-	survey["questions"].append({
+    survey["questions"].append({
         "type": "yes-no",
         "title": u"Mittags Stammtisch",
         "toc": u"Mittags Stammtisch",
@@ -490,7 +489,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         ],
         "comment": u"Anmerkungen",
         "answer": None,
-    }) 
+    })
     survey["questions"].append({
         "type": "free-comment",
         "title": u"Anmerkungen (positiv)",
@@ -530,8 +529,8 @@ if __name__ == "__main__":
     import sys
     import wst.survey_service
     service = wst.survey_service.SurveyService(
-        host=("127.0.0.1", 8000),
-        #host=("88.198.106.203", 8080),
+        #host=("127.0.0.1", 8000),
+        host=("88.198.106.203", 8080),
         survey_factory=survey_factory,
         temp_dir="/tmp",
         vote_code_file="data/votecodes.json",
@@ -542,8 +541,8 @@ if __name__ == "__main__":
     elif len(sys.argv) == 3 and sys.argv[1] == "--evaluate":
         service.evaluate(sys.argv[2])
     elif len(sys.argv) == 2 and sys.argv[1] == "--print-votecodes":
-        title = "Kindergarten St. Michael Elternumfrage 2015"
-        url = "http://digitalarbeiter.de:8080/"
+        title = "Kindergarten St. Michael Elternumfrage 2016"
+        url = "http://cloud.digitalarbeiter.de:8080/"
         service.print_votecodes(title, url)
     elif len(sys.argv) == 2 and sys.argv[1] == "--run":
         service.run()

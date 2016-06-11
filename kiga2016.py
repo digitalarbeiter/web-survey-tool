@@ -67,7 +67,7 @@ Selbstverständlich werdet Ihr über die Ergebnisse informiert. </p>
 Die Teilnahme an der Befragung ist freiwillig. Die Auswertung erfolgt 
 anonym. </p>
 <p>
-Bitte füllt Eure Fragebogen bis spätestens Sonntag, den 12. Juni
+Bitte füllt Eure Fragebogen bis spätestens Sonntag, den 27. Juni
 aus. </p>
 <p>
 Ein großes Dankeschön schon mal für Eure Unterstützung </p>
@@ -385,7 +385,7 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "title": u"Elterncafe",
         "toc": u"Nichtteilnahme",
         "question": u"Was waren die Gründe,wenn Ihr nicht teilgenommen habt",
-        "answer_type": "checkbox",
+        "answer_type": "radio",
         "choices": JA_NEIN,
         "subquestions": [
             u"Kein Interesse",

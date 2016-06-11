@@ -372,8 +372,8 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "title": u"Elterncafe",
         "toc": u"Teilname",
         "question": u"Habt ihr schon mal am Elterncafe teilgenommen?",
-        "answer_type": "radio",
-        "choices": JA_NEIN,
+        "answer_type": "checkbox",
+        "choices": JA,
         "subquestions": [
             u"Habt ihr schon mal am Elterncafe teilgenommen?"
         ],
@@ -481,11 +481,10 @@ Da unsere Kinder das Projektzimmer benötigen, können wir es nicht mehr für da
         "title": u"Mittags Stammtisch",
         "toc": u"Mittags Stammtisch",
         "question": u"Hättet Ihr auch Interesse an einem Mittagsessenstammtisch (gemeinsames Mittagessen mit Kindern) z.B.: im Häusle?",
-        "answer_type": "radio",
+        "answer_type": "checkbox",
         "choices": JA,
         "subquestions": [
-            u"Ja das das könnte ich mir gut vorstellen",
-            u"Nein, da habe ich kein Interesse"
+            u"Interesse?",
         ],
         "comment": u"Anmerkungen",
         "answer": None,
